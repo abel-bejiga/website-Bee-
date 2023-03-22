@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,13 +12,14 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    place-items: center;
     padding:30px 80px;
     position: absolute;
     width: 100%;
     backdrop-filter: blur(3px);
     box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
 }
+
 .menu a, .hero-disc a, .left a {
     font-size: 15px;
     text-decoration: none;
@@ -30,8 +33,10 @@ nav {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    
 
 }
+
 .cover {
     position: absolute;
     background-color: black;
@@ -139,19 +144,18 @@ body {
     min-width: 600px;
     max-width: 1900px;
     height: 80%;
-    min-height: 30vh;
+    min-height: 600px;
     max-height: 1200px;
     top: 50%;
     border-radius: 2rem; 
-    display: flex;
-    justify-content: space-around;
+    padding: 100px 0;
     place-items: center;
     overflow:scroll;
     
     
 }
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
   .bg-cover-add {
     display: grid;
     height: 800px;
@@ -161,7 +165,7 @@ body {
   .bg-cover-add a {
     margin: 10px !important;
   }
-}
+} */
 
 .firstHalf, .secondHalf {
   
@@ -198,13 +202,13 @@ body {
   /* gallary */
 
 /* .oneIn, .twoIn, .threeIn, .oneIn2, .twoIn2, .threeIn2, .oneIn3, .twoIn3, .threeIn3, .oneIn4, .twoIn4, .threeIn4, .oneIn5, .twoIn5, .threeIn5 */
-
+/* 
   .bg-cover-add a{
     width:180px;
     height: 150px;
     background-color: rgba(128, 128, 128, 0.664);
     /* backdrop-filter: blur(20px); */
-    border-radius: 2rem;
+    /* border-radius: 2rem;
     display: grid;
     margin: 2rem;
     animation: flyIn 1s ease-in;
@@ -214,8 +218,8 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 10rem;
-  }
-  .oneIn {
+  } */
+  /*.oneIn {
     background-image: url(./images/fk.png);
     
   }
@@ -262,10 +266,7 @@ body {
     background-image: url(./images/IMG_8832.JPG);
   }
   .bg-cover-add a:hover {
-    /* width: 300px;
-    height: 500px; */
-    /* transform: translate(0, -100px); */
-    /* scale: 2.0; */
+    
     transform: scale(2.0);
   
     position: relative;
@@ -279,7 +280,7 @@ body {
   }
   .threeIn6 {
     background-image: url(images/20211206171854_IMG_2008.JPG);
-  }
+  } */
 
 @keyframes flyIn {
     0% {
@@ -304,7 +305,7 @@ body {
 /* view pictures */
 
 .plus {
-    /* background-image: url(./images/fk.png); */
+
     background-position: center top;
     background-size: cover;
     width: 50vw;
@@ -318,7 +319,7 @@ body {
     transform: translate(-50%, -50%);
     
 }
-
+/* 
 .left-angle, .right-angle{
   border: 1px solid transparent;
   border-radius: 20px;
@@ -332,22 +333,42 @@ body {
   font-size: 50px;
   transition: all 0.5s;
 }
-.left-angle {
-  /* position: absolute; */
-position: sticky;
-  top: 50%;
-  left: 0%;
-  /* left: -10%; */
-}
-.right-angle {
-  top: 50%;
-  right: 0%;
-  position: sticky;
-  /* margin-right: 10%; */
-} 
+
 
 .left-angle:hover, .right-angle:hover {
   color: white;
   scale: 1.2;
   cursor: pointer;
+} */
+
+
+.height img{
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.5s;
+  object-fit: cover;
+
 }
+.width {
+  display: flex;
+  flex-wrap: wrap;
+}
+.height {
+  justify-content: center;
+  grid-gap: 10px;
+  position: absolute;
+}
+
+.height img:hover {
+  scale: 2.3;
+  transform: translate(20px, 20px);
+  position: relative;
+  
+
+}
+.height img:not(:hover){
+  filter: blur(3px);
+
+} 
