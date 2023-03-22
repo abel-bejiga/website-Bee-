@@ -17,6 +17,7 @@ nav {
     position: absolute;
     width: 100%;
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
 }
 
@@ -140,6 +141,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     width: 60%;
     min-width: 600px;
     max-width: 1900px;
@@ -349,6 +351,7 @@ body {
   border-radius: 10px;
   transition: all 0.5s;
   object-fit: cover;
+ 
 
 }
 .width {
@@ -358,17 +361,60 @@ body {
 .height {
   justify-content: center;
   grid-gap: 10px;
-  position: absolute;
+  transition: all 0.5s;
+
 }
 
 .height img:hover {
-  scale: 2.3;
-  transform: translate(20px, 20px);
-  position: relative;
-  
-
+ transform: scale(2.0);
+ z-index: 3;
 }
+
 .height img:not(:hover){
   filter: blur(3px);
-
+  z-index: -1;
 } 
+
+@media screen and (max-width: 1000px) {
+  .height img:hover {
+
+    transform: scale(1.0);
+   }
+   .height img:not(:hover){
+
+  filter: blur(0px);
+
+  } 
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: hsl(120, 60%, 50% / 1);
+  border-radius: 100vw;
+  margin-block: .5em;
+  margin-left: 10em;
+}
+::-webkit-scrollbar-thumb{
+  background: hsl(120, 100%, 20% / 1);
+  border-radius: 100vw;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: hsl(120, 100%, 10% / 1);
+
+}
+
+#add-hidden {
+  font-size: 24px;
+  
+}
+#add-hidden:hover {
+  color: rgba(119, 136, 153, 0.637);
+}
+.menu {
+  display: flex;
+  align-items: center;
+}

@@ -20,9 +20,10 @@
             </div>
 
             <div class="menu" id="home">
-                <a href="./index.html">About</a>
+                <a href="./index.html"><i class="fa-solid fa-house hidden" id="add-hidden"></i></a>
+                <a href="./about.html">About</a>
                 <a href="#"  id="gallary">Gallary</a>
-                <a href="./index.html">More</a>
+                <a href="./more.html">More</a>
                 <a href="mailto:contact@bemneterbeto.com">Contact</a>
             </div>
         </nav>
@@ -31,7 +32,7 @@
     </section>
 
     <section class="mid">
-        <div class="hero">
+        <div class="hero" id="home">
 
             <!-- right and left nav arrow -->
 
@@ -141,21 +142,18 @@ $("#gallary").click(function(){
 
         $("#hero-disc").addClass("out");
         $("#hero-disc").removeClass("in");
-
+        $("#add-hidden").removeClass("hidden").addClass("in")
 
         // each pictures on click
         
  
 })
 
-
-$(".hero").click(function(){
-    
-    $("#bg-cover-add").addClass("hidden").addClass("in")
-    $("#hero-disc").removeClass("out");
-
-   
+$("#add-hidden").click(function(){
+    $("#add-hidden").addClass("out")
 })
+
+
 
 
     </script>
