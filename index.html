@@ -9,8 +9,18 @@
     <script src="https://kit.fontawesome.com/daae0fece6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swup@3"></script>
+
+    <script defer src="./script.js"></script>
+    <link  rel="stylesheet" href="swup.css">
+
 </head>
+
+
+
 <body>
+    
+    <main id="swup" class="transition-fade">
     <section class="top">
         <div class="cover">
         <nav>
@@ -24,7 +34,7 @@
                 <a href="./about.html">About</a>
                 <a href="#"  id="gallary">Gallary</a>
                 <a href="./more.html">More</a>
-                <a href="mailto:contact@bemneterbeto.com">Contact</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </nav>
         </div>
@@ -37,11 +47,11 @@
             <!-- right and left nav arrow -->
 
            
-            <div class="bg-cover">
-            <div class="hero-disc" id="hero-disc">
+            <div class="bg-cover ">
+            <div class="hero-disc transition-swipe" id="hero-disc">
                 <p id="name">Bemnet <span>Erbeto</span> </p>
                 <p id="disc">Model | Web Developer</p>
-                <a href="mailto:contact@bemneterbeto.com">Contact Me</a>
+                <a href="mailto:contact@bemneterbeto.com" >Contact Me</a>
             </div>
         </div>
 
@@ -52,70 +62,31 @@
             <div class="container-fluid width">
                 <div class="height row" >
                     
-                <a href="./images/IMG_8707.JPG" id="image" target="_blank"><img src="./images/IMG_8707.JPG" alt=""></a>
-                <a href="./images/IMG_8724.JPG" id="image" target="_blank"><img src="./images/IMG_8724.JPG" alt="image"></a>
-                <a href="./images/IMG_8792.JPG" id="image" target="_blank"><img src="./images/IMG_8792.JPG" alt="image"></a>
-                <a href="./images/IMG_8821.JPG" id="image" target="_blank"><img src="./images/IMG_8821.JPG" alt="image"></a>
-                <a href="./images/IMG_8824.JPG" id="image" target="_blank"><img src="./images/IMG_8824.JPG" alt="image"></a>
-                <a href="./images/IMG_8831.JPG" id="image" target="_blank"><img src="./images/IMG_8831.JPG" alt="image"></a>
-                <a href="./images/IMG_8832.JPG" id="image" target="_blank"><img src="./images/IMG_8832.JPG" alt="image"></a>
-                <a href="./images/IMG_8833.JPG" id="image" target="_blank"><img src="./images/IMG_8833.JPG" alt="image"></a>
-                <a href="./images/IMG_8836.JPG" id="image" target="_blank"><img src="./images/IMG_8836.JPG" alt="image"></a>
-                <a href="./images/IMG_8874.JPG" id="image" target="_blank"><img src="./images/IMG_8874.JPG" alt="image"></a>
-                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/20211206171854_IMG_2008.JPG" alt="image"></a>
-                <a href="./images/20211205160555_IMG_1593.JPG" id="image" target="_blank"><img src="./images/20211205160555_IMG_1593.JPG" alt="image"></a>
-                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/20211206171854_IMG_2008.JPG" id="" alt="image"></a>
-                <a href="./images/IMG_8902.JPG" id="image" target="_blank"><img src="./images/IMG_8902.JPG" alt="image"></a>
-                <a href="./images/IMG_8885.JPG" id="image" target="_blank"><img src="./images/IMG_8885.JPG" alt="image"></a>
-                <a href="./images/IMG_8711.JPG" id="image" target="_blank"><img src="./images/IMG_8711.JPG" alt="image"></a>
-                <a href="./images/IMG_8889.JPG" id="image" target="_blank"><img src="./images/IMG_8889.JPG" width="350px" alt="image"></a>
-                <a href="./images/IMG_8881.JPG" id="image" target="_blank"><img src="./images/IMG_8881.JPG" alt="image"></a>
+                <a href="./images/IMG_8707.JPG"  id="image" target="_blank"><img src="./images/IMG_8707.JPG" loading="lazy" alt=""></a>
+                <a href="./images/IMG_8724.JPG" id="image" target="_blank"><img src="./images/IMG_8724.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8792.JPG" id="image" target="_blank"><img src="./images/IMG_8792.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8821.JPG" id="image" target="_blank"><img src="./images/IMG_8821.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8824.JPG" id="image" target="_blank"><img src="./images/IMG_8824.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8831.JPG" id="image" target="_blank"><img src="./images/IMG_8831.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8832.JPG" id="image" target="_blank"><img src="./images/IMG_8832.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8833.JPG" id="image" target="_blank"><img src="./images/IMG_8833.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8836.JPG" id="image" target="_blank"><img src="./images/IMG_8836.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8874.JPG" id="image" target="_blank"><img src="./images/IMG_8874.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/20211206171854_IMG_2008.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/20211205160555_IMG_1593.JPG" id="image" target="_blank"><img src="./images/20211205160555_IMG_1593.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/20211206171854_IMG_2008.JPG" loading="lazy" id="" alt="image"></a>
+                <a href="./images/IMG_8902.JPG" id="image" target="_blank"><img src="./images/IMG_8902.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8885.JPG" id="image" target="_blank"><img src="./images/IMG_8885.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8711.JPG" id="image" target="_blank"><img src="./images/IMG_8711.JPG" loading="lazy" alt="image"></a>
+                <a href="./images/IMG_8889.JPG" id="image" target="_blank"><img src="./images/IMG_8889.JPG" loading="lazy" width="350px" alt="image"></a>
+                <a href="./images/IMG_8881.JPG" id="image" target="_blank"><img src="./images/IMG_8881.JPG" loading="lazy" alt="image"></a>
             </div>
-            <!-- <div class="firstHalf">
-            <div class="one">
-                <a href="#" class="oneIn"></a>
-                <a href="#" class="twoIn"></a>
-                <a href="#" class="threeIn"></a>
-            </div>
-            
-            <div class="two">
-                <a href="#" class="oneIn2"></a>
-                <a href="#" class="twoIn2"></a>
-                <a href="#" class="threeIn2"></a>
-            </div>
-            <div class="three">
-                <a href="#" class="oneIn3"></a>
-                <a href="#" class="twoIn3"></a>
-                <a href="#" class="threeIn3"></a>
-            </div>
+  
         </div>
-        <div class="secondHalf">
-            <div class="four">
-                <a href="#" class="oneIn4"></a>
-                <a href="#" class="twoIn4"></a>
-                <a href="#" class="threeIn4"></a>
-            </div>
-            <div class="five">
-                <a href="#" class="oneIn5"></a>
-                <a href="#" class="twoIn5"></a>
-                <a href="#" class="threeIn5"></a>
-            </div>
-            <div class="six">
-                <a href="#" class="oneIn6"></a>
-                <a href="#" class="twoIn6"></a>
-                <a href="#" class="threeIn6"></a>
-            </div> -->
+
         </div>
-        <!-- <div class="arrows"> -->
-        </div>
-           
-            <!-- <div class="right-angle"><i class="fa-solid fa-chevron-right"></i></div>  -->
+
     </div>
-<!-- </div> -->
-
-        <!-- <div class="plus hidden">
-
-        </div> -->
 
 
         </div>
@@ -124,6 +95,7 @@
 
 
 
+        </main>
 
 
 
@@ -132,31 +104,7 @@
     integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
     crossorigin="anonymous"></script>
 
-    <script>
-        
+    <script src="./index.js"></script>
 
-
-$("#gallary").click(function(){
-    
-    $("#bg-cover-add").removeClass("hidden")
-
-        $("#hero-disc").addClass("out");
-        $("#hero-disc").removeClass("in");
-        $("#add-hidden").removeClass("hidden").addClass("in")
-
-        // each pictures on click
-        
- 
-})
-
-$("#add-hidden").click(function(){
-    $("#add-hidden").addClass("out")
-})
-
-
-
-
-    </script>
-</body>
 
 </html>
