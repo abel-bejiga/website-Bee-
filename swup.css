@@ -1,0 +1,21 @@
+.transition-fade{
+    opacity: 1;
+    transition: 700ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+
+    transform: translateX(100%);
+}
+
+.transition-swipe {
+    transition: 600ms;
+    transform: translateY(0);
+}
+
+html.is-animating .transition-swipe{
+
+    transform: translateY(100%);
+}
