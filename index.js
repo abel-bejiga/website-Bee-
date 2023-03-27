@@ -38,20 +38,31 @@ $(document).ready(function() {
   
     // hamburger menu
 
-    $("#hamburger").click(function(){
+    $("#hamburger").click(menuClicked);
+    $("#close-menu").click(closeMenuClicked);
+    $(".hero").click(mainPageClicked);
 
+
+
+    function menuClicked(){
       $("#translate").attr('id', 'mobile-hamburger-in');
       $("#mobile-hamburger-out").attr('id', 'mobile-hamburger-in' );
-        $("#hamburger").toggleClass("hide");
+        $(this).toggleClass("hide");
         $("#close-menu").toggleClass("hide");
-    })
-    $("#close-menu").click(function(){
-
+    }
+    function closeMenuClicked(){
       $("#mobile-hamburger-in").attr("id", "mobile-hamburger-out");
       $("#hamburger").toggleClass("hide");
-      $("#close-menu").toggleClass("hide");
+      $(this).toggleClass("hide");
+    }
 
-    })
+    function mainPageClicked(){
+      $("#mobile-hamburger-in").attr("id", "mobile-hamburger-out");
+      $("#hamburger").removeClass("hide");
+      $("#close-menu").addClass("hide");
+      
+    }
+
 
 
 // $("#add-hidden").click(function(){

@@ -120,7 +120,7 @@ nav {
     color: white;
 }
 
-.cover a:hover {
+#home a:hover {
     color: white;
 }
 
@@ -651,10 +651,10 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     transition: all 0.5s;
-
+    
   }
   nav:hover {
-    background-color: rgba(211, 211, 211, 0.719);
+    background-color: rgba(211, 211, 211, 0.438);
 
   }
   .left a {
@@ -699,6 +699,14 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
   /* mobile menu */
   .ham-menu {
     display: flex !important;
+    
+  }
+  .ham-menu a{
+    transition: all 0.5s;
+  }
+  .ham-menu a:hover{
+    color: black;
+    transform: scale(1.2);
   }
 
   .ham-menu i {
@@ -714,11 +722,11 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
   #translate {transform: translateX(300px);}
   #mobile-hamburger-in {
     transition: all 1s ;
-    animation: hamburgerMenuIn 1s ease-in-out 1 backwards;
+    animation: hamburgerMenuIn 0.5s ease-in-out 1 backwards;
   }
   #mobile-hamburger-out {
     transition: all 1s ;
-    animation: hamburgerMenuOut 1s ease-out 1 forwards;
+    animation: hamburgerMenuOut 0.5s ease-out 1 forwards;
   }
   
 
@@ -746,13 +754,14 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
   .mobile-menu a {
     display: grid;
     place-content: center;
-    border: 1px solid blue;
+    border: 1px solid white;
     border-radius: 10px;
     margin: 10px;
     padding: 10px 0;
     letter-spacing: 2px;
     text-decoration: none;
     transition: all 0.5s;
+    color: white;
   }
   .mobile-menu a:hover {
     background-color: white;
@@ -763,17 +772,22 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
 }
 
 
-@keyframes hamburgerMenuIN {
-  from {transform: translateX(300px); opacity: -1;}
-  to {transform: translateX(0px); opacity: 1;}
+@keyframes hamburgerMenuIn {
+  0% {transform: translateX(300px); opacity: -1;}
+  70% {transform: translate(-30px);}
+  80% {transform: translate(0px);}
+  90% {transform: translate(-10px);}
+  100% {transform: translateX(0px); opacity: 1;}
+
 }
 @keyframes hamburgerMenuOut {
-  from {transform: translateX(0px); opacity: 1;}
-  to {transform: translateX(300px); opacity: -1;}
-}
+   0% {transform: translateX(0px); opacity: 1;}
+   50% {transform: translateX(-10px);}
+  100% {transform: translateX(300px); opacity: -1;}
+} 
 
 @media screen and (min-width: 576px) {
   .mobile {
     display: none !important;
   }
-}
+} 
