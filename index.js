@@ -36,6 +36,23 @@ $(document).ready(function() {
     );
   });
   
+    // hamburger menu
+
+    $("#hamburger").click(function(){
+
+      $("#translate").attr('id', 'mobile-hamburger-in');
+      $("#mobile-hamburger-out").attr('id', 'mobile-hamburger-in' );
+        $("#hamburger").toggleClass("hide");
+        $("#close-menu").toggleClass("hide");
+    })
+    $("#close-menu").click(function(){
+
+      $("#mobile-hamburger-in").attr("id", "mobile-hamburger-out");
+      $("#hamburger").toggleClass("hide");
+      $("#close-menu").toggleClass("hide");
+
+    })
+
 
 // $("#add-hidden").click(function(){
 //     $("#bg-cover-add").addClass("hidden").addClass("out")
