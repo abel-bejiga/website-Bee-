@@ -57,7 +57,8 @@ nav {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    z-index: 100;
+
+
 }
 @media screen and (min-width: 1920px) {
     .hero {
@@ -133,38 +134,22 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
     display: none !important;
 }
 .bg-cover-add {
-    position:relative;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     width: 60%;
     min-width: 600px;
     max-width: 1900px;
-    height: 80%;
+    height: 70vh;
     min-height: 600px;
     max-height: 1200px;
     top: 50%;
     border-radius: 2rem; 
-    padding: 100px 0;
     place-items: center;
+    z-index: 100;
     overflow:scroll;
-    
-    
 }
-
-/* @media screen and (max-width: 1280px) {
-  .bg-cover-add {
-    display: grid;
-    height: 800px;
-    width: 700px;
-    overflow: scroll;
-  }
-  .bg-cover-add a {
-    margin: 10px !important;
-  }
-} */
 
 .firstHalf, .secondHalf {
   
@@ -191,6 +176,22 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
     animation-fill-mode: forwards;
       transition-timing-function: ease-in;
       transition: 2.5s;
+  }
+  .zoomIn {
+    transition: all 0.5s;
+    animation: zoomIn 1s ease-in 1 forwards;
+  }
+  .zoomOut {
+    transition: all 0.5s;
+    animation: zoomOut 1s ease-out 1 backwards;
+  }
+  @keyframes zoomIn {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+  }
+  @keyframes zoomOut {
+    from{transform: scale(1);}
+    to{transform: scale(0);}
   }
 
   @keyframes fadeOut {
@@ -231,55 +232,96 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
   }
 }
 
-/* view pictures */
-
-/* .plus {
-
-    background-position: center top;
-    background-size: cover;
-    width: 50vw;
-    max-width: 600px;
-    background-color: red;
-    height: 60vh;
-    border-radius: 2rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    
-} */
-
-
-.height img{
+.size img{
   min-width: 200px;
   max-width: 300px;
   height: auto;
   border-radius: 10px;
   transition: all 0.5s;
   object-fit: cover;
- 
+  position: relative;
+}
+.extended-size img{
+  min-width: 80%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  margin:10px auto;
+  transition: all 0.5s;
+  scroll-behavior: smooth;
+
 
 }
-.width {
+.main-height ul {
   display: flex;
   flex-wrap: wrap;
+  /* float: left; */
 }
+
 .height {
+  padding: 30px;
   justify-content: center;
   grid-gap: 10px;
   transition: all 0.5s;
+  list-style: none;
+}
 
+.height ul li {
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
 .height img:hover {
- transform: scale(2.0);
+ transform: scale(1.4);
  z-index: 3;
 }
 
 .height img:not(:hover){
-  filter: blur(3px);
+  filter: blur(1px);
   z-index: -1;
 } 
+/* show preference */
+.show-type {
+  position: sticky;
+  top: 0;
+}
+.inside-show-type {
+  display: flex;
+  position: relative;
+  top: -4px;
+  margin-right: 20px;
+  z-index: 1000;
+  column-gap: 10px;
+  border: 1px solid transparent;
+  background-color: rgba(207, 207, 207, 0.37);
+  padding: 10px 10px 10px 20px;
+  place-items: center;
+  width: 300px;
+  border-radius: 2rem;
+
+}
+
+.inside-show-type button {
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  border: transparent;
+}
+.inside-show-type p{
+  margin-bottom: 0;
+  font-weight: 300;
+}
+.inside-show-type #view-p {
+  font-weight: 500;
+}
+.inside-show-type button:hover {
+  background-color: rgba(83, 55, 4, 0.692);
+  color: white;
+
+}
+
 
 @media screen and (max-width: 1000px) {
   .height img:hover {
@@ -297,11 +339,11 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
   width: 0px;
 }
 
-#add-hidden {
+#add-hidden, #add-hidden2 {
   font-size: 24px;
   
 }
-#add-hidden:hover {
+#add-hidden:hover, #add-hidden2:hover {
   color: rgba(119, 136, 153, 0.637);
 }
 .menu {
@@ -668,6 +710,7 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
 
   .hero{
     background-image: url(./images/sm/edit-hero-small.png);
+    
   }
 
 
@@ -791,3 +834,57 @@ background: linear-gradient(0deg, rgba(143,55,91,0.7399334733893557) 0%, rgba(23
     display: none !important;
   }
 } 
+
+
+
+/* loader */
+
+@keyframes loader {
+  0% {transform:rotate(-45deg)}
+  50%{transform:rotate(-135deg)}
+  100%{transform:rotate(-225deg)}}
+@keyframes span-1 {
+  0% {transform:translate(0);}
+  50%{transform:translate(-50px, 0);border-color:#EE4D68}
+  100%{transform:translate(0);}}
+@keyframes span-2 {
+  0%{transform:translate(0);}
+  50%{transform:translate(50px, 0);border-color:#875678}
+  100%{transform:translate(0);}}
+@keyframes span-3 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, -50px);border-color:#FF9900}
+  100%{transform:translate(0);}}
+@keyframes span-4 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, 50px);border-color:#00E4F6}
+  100%{transform:translate(0);}}
+.loader {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loader 2s infinite ease-in-out;
+}
+.loader span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 4px solid #0B1B48;
+}
+.loader span:nth-child(1) {
+  animation: span-1 2s ease-in-out infinite;
+}
+.loader span:nth-child(2) {
+  animation: span-2 2s ease-in-out infinite;
+}
+.loader span:nth-child(3) {
+  animation: span-3 2s ease-in-out infinite;
+}
+.loader span:nth-child(4) {
+  animation: span-4 2s ease-in-out infinite;
+}

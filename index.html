@@ -24,8 +24,16 @@
 
 
 <body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     <main id="swup" class="transition-fade">
+        
     <section class="top">
+       
         <div class="cover">
         <nav>
             
@@ -36,6 +44,7 @@
 
             <div class="menu hide" id="home">
                 <a href="#" id="add-hidden" class="hidden"><i class="fa-solid fa-house "></i></a>
+                <a href="#" id="add-hidden2" class="hidden"><i class="fa-solid fa-house "></i></a>
                 <a href="./about.html" class="anime" id="about-link">About</a>
                 <a href="#"  id="gallary">Gallary</a>
                 <a href="./more.html">More</a>
@@ -77,47 +86,84 @@
             </div>
         </div>
 
-        
         <div class="bg-cover-add hidden" id="bg-cover-add">
-
-            <!-- <div class="left-angle"><i class="fa-solid fa-chevron-left"></i></div>  -->
-            <div class="container-fluid width">
-                <div class="height row" >
-                    
-                <a href="./images/toggle-xl.JPG"  id="image" target="_blank"><img src="./images/loosy-imgs/21.JPG" data-src="./images/toggle-xl.JPG" alt=""></a>
-                
-                <a href="./images/toggle-bg-light.png" id="image" target="_blank"><img src="./images/loosy-imgs/toggle-bg-light-loosy.png" data-src="./images/toggle-bg-light.png" alt="image"></a>
-
-                <a href="./images/IMG_8792.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/7.JPG" data-src="./images/IMG_8792.JPG" alt="image"></a>
-                <a href="./images/IMG_8821.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/8.JPG" data-src="./images/IMG_8821.JPG" alt="image"></a>
-                <a href="./images/IMG_8824.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/9.JPG" data-src="./images/IMG_8824.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8831.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/10.JPG" data-src="./images/IMG_8831.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8832.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/11.JPG" data-src="./images/IMG_8832.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8833.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/12.JPG" data-src="./images/IMG_8833.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8836.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/16.JPG" data-src="./images/IMG_8836.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8874.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/14.JPG" data-src="./images/IMG_8874.JPG" alt="image"></a>
-
-                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/2.JPG" data-src="./images/20211206171854_IMG_2008.JPG" alt="image"></a>
-
-                <a href="./images/20211205160555_IMG_1593.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/toggle-bg-light-loosy.png" data-src="./images/20211205160555_IMG_1593.JPG" alt="image"></a>
-                <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/2.JPG" data-src="./images/20211206171854_IMG_2008.JPG" id="image" alt="image"></a>
-
-                <a href="./images/IMG_8902.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/18.JPG" data-src="./images/IMG_8902.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8885.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/16.JPG" data-src="./images/IMG_8885.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8889.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/17.JPG" data-src="./images/IMG_8889.JPG" width="350px" alt="image"></a>
-
-                <a href="./images/IMG_8711.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/5.JPG" data-src="./images/IMG_8711.JPG" alt="image"></a>
-
-                <a href="./images/IMG_8881.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/15.JPG" data-src="./images/IMG_8881.JPG" alt="image"></a>
+            <div class="show-type " >
+                <div class="inside-show-type">
+                <p id="view-p">View</p>
+               <button type="submit" id="btn-gallary"> <p>Gallary</p></button>
+               <button type="submit" id="btn-zoom" > <p>Zoomed</p></button>
             </div>
-  
+            </div>
+            
+            <!-- <div class="left-angle"><i class="fa-solid fa-chevron-left"></i></div>  -->
+           
+            <div class="container-fluid width">
+               
+               
+                <div class="main-height row" >
+               <ul class="height size" id="lists">
+                     
+                <li>
+                    <a href="./images/loosy-imgs/21.JPG" id="image1" target="_blank"><img src="./images/loosy-imgs/21.JPG" data-src="./images/toggle-xl.JPG" alt=""></a>
+                 </li>
+                <li>
+                    <a href="./images/toggle-bg-light.png" id="image" target="_blank"><img src="./images/loosy-imgs/toggle-bg-light-loosy.png" data-src="./images/toggle-bg-light.png" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8792.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/7.JPG" data-src="./images/IMG_8792.JPG" alt="image"></a> </li>
+                <li>
+                    <a href="./images/IMG_8821.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/8.JPG" data-src="./images/IMG_8821.JPG" alt="image"></a> </li>
+                <li>
+                    <a href="./images/IMG_8824.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/9.JPG" data-src="./images/IMG_8824.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8831.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/10.JPG" data-src="./images/IMG_8831.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8832.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/11.JPG" data-src="./images/IMG_8832.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8833.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/12.JPG" data-src="./images/IMG_8833.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8836.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/16.JPG" data-src="./images/IMG_8836.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/IMG_8874.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/14.JPG" data-src="./images/IMG_8874.JPG" alt="image"></a> </li>
+
+                <li>
+                    <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/2.JPG" data-src="./images/20211206171854_IMG_2008.JPG" alt="image"</a>
+                </li>
+
+                <li>
+                    <a href="./images/20211205160555_IMG_1593.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/toggle-bg-light-loosy.png" data-src="./images/20211205160555_IMG_1593.JPG" alt="image"></a> </li>
+                <li>
+                     <a href="./images/20211206171854_IMG_2008.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/2.JPG" data-src="./images/20211206171854_IMG_2008.JPG" id="image" alt="image"></a>
+                    </li> 
+
+                <li>
+                    <a href="./images/IMG_8902.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/18.JPG" data-src="./images/IMG_8902.JPG" alt="image"></a>
+                 </li>
+
+                <li>
+                    <a href="./images/IMG_8885.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/16.JPG" data-src="./images/IMG_8885.JPG" alt="image"></a> 
+                </li>
+
+                <li>
+                    <a href="./images/IMG_8889.JPG" target="_blank"><img src="./images/loosy-imgs/17.JPG" data-src="./images/IMG_8889.JPG" alt="image"></a>
+                    
+                </li>
+
+                <li>
+                    <a href="./images/IMG_8711.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/22.JPG" data-src="./images/IMG_8711.JPG" alt="image"></a> 
+                </li>
+
+                <li>
+                    <a href="./images/IMG_8881.JPG" id="image" target="_blank"><img src="./images/loosy-imgs/15.JPG" data-src="./images/IMG_8881.JPG" alt="image">
+                    </a></li>
+               </ul>
+            </div>
+           
         </div>
 
         </div>

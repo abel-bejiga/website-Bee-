@@ -5,7 +5,8 @@ $("#gallary").click(function gallary(){
     $("#bg-cover-add").removeClass("hidden").addClass("in").removeClass("out");
     $("#hero-disc").addClass("out").removeClass("in");
 $("#add-hidden").removeClass("hidden").addClass("in");
-
+$(".show-type").removeClass("hidden");
+$(".show-type").attr("id", "mobile-hamburger-in");
     // each pictures on click
 
         
@@ -16,7 +17,10 @@ $("#add-hidden").click(function(){
     $("#bg-cover-add").removeClass("in").addClass("out").addClass("hidden");
     $(this).addClass("hidden").removeClass("in").addClass("out");
     $("#hero-disc").removeClass("out").addClass("in");
-    
+  $(".show-type").addClass("hidden").removeClass("in");
+  $(".show-type").attr("id", "mobile-hamburger-out");
+  $('.extended-size').toggleClass("zoomOut").attr('class', 'size').addClass("height");
+
     })
 
 
@@ -62,6 +66,22 @@ $(document).ready(function() {
       $("#close-menu").addClass("hide");
       
     }
+
+   
+// image gallery
+
+      let btnGallary = $("#btn-gallary");
+      let btnZoom = $("#btn-zoom");
+
+        btnGallary.click(function(){
+          $('.extended-size').toggleClass("zoomOut").attr('class', 'size').addClass("height");
+        })
+
+        btnZoom.click(function(){
+          
+          $('.size').toggleClass("zoomIn").attr('class', 'extended-size').removeClass("height");
+
+        })
 
 
 
