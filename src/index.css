@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SFPro-rounded';
+    src: url('./fonts/SF_Pro_Rounded/SF-Pro-Rounded-Regular.otf');
+    font-display: auto; 
+  } 
+  @font-face {
+    font-family: 'SFPro-thin';
+    src: url('./fonts/SF_Pro_Rounded/SF-Pro-Rounded-Thin.otf');
+  }
+
+body {
+    background-color: #E8E6E2;
+    
+}
+
+.fo_t {
+    font-family: 'SFPro-thin', sans-serif;
+}
+
+.fo_r {
+    font-family: 'SFPro-rounded', sans-serif;
+}
+
+.sm_ooth {
+    transition: all 0.5s ease;
+}
