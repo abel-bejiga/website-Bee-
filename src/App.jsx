@@ -15,7 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={`${refVal ? 'fadeOut z-0' : 'z-50'} fixed top-0 w-full `}>
+      <div className={`${refVal ? 'fadeOut z-0' : 'fadeIn z-50'} fixed top-0 w-full `}>
         <Header />
         <Menu />
       </div>
