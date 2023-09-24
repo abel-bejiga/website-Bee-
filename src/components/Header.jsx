@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <div>
+      <div className='fixed top-8 left-10 w-fit z-20'>
       <div className='grid place-items-center gap-4'>
             <img src={item.be_lgo} alt="ico" className='w-16 rounded-2xl cursor-pointer'/>
             <ul className='grid gap-2 place-items-center sm_ooth'>

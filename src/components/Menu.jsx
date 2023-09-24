@@ -7,8 +7,8 @@ const Menu = () => {
 
   return (
     <>
-        <div>
-            <Hamburger toggled={muA} toggle={setMuA} easing='ease-in-out'/>
+        <div className='absolute right-10 top-8 z-20'>
+            <Hamburger toggled={muA} toggle={setMuA} size={60} easing='ease-in-out'/>
         </div>
     </>
   )

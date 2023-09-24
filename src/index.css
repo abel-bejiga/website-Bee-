@@ -12,6 +12,9 @@
     src: url('./fonts/SF_Pro_Rounded/SF-Pro-Rounded-Thin.otf');
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
 body {
     background-color: #E8E6E2;
     
