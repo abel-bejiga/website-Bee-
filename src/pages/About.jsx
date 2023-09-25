@@ -14,7 +14,7 @@ const About = () => {
                     <div className=' absolute xl:top-20 top-7 xl:right-0 -right-40 z-[1] overflow-hidden' style={{height: 'calc(100% - 5rem)'}}>
                 <img src={item.b_sec} alt="img" className='object-cover object-center'/>
                     </div>
-                    <img src={item.te_let_h} alt="ico" className='object-cover object-center w-full absolute bottom-0'/>
+      
             </div>
 
         </>

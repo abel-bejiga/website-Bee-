@@ -1,0 +1,65 @@
+  // const inside_gal = React.useRef(null)
+  // const [ref, inView] = useInView({
+  //   triggerOnce: false, 
+  //   threshold: 0.3
+  // })
+  // const [inside_gal, gal_inView] = useInView({
+  //   triggerOnce: false, 
+  //   threshold: 0.3
+  // })
+
+  // React.useEffect(() => {
+  //   if (inView) {
+  //       setRefVal('gal_intro')
+  //   } else if (inside_gal.current !== null) {
+  //       setRefVal('gal_show')
+
+  //   } else{
+  //       setRefVal('')
+  //   }
+  // }, [inView, setRefVal, inside_gal])
+
+//   const HorizontalScroll = () => {
+//     const { scrollY } = useScroll({target: targetRef})
+  
+
+//     const x = useTransform(scrollY, [0, 1], ['1%', '-95%'])
+
+//     return (
+ 
+//  <section ref={targetRef} className='relative h-[300vh] bg-pink-600'>
+         
+//          <div className=' sticky top-0 flex h-screen items-center overflow-hidden '>
+//               {/* <div className=''> */}
+//               <motion.div style={{x}} className={`h-fit w-full select-none flex gap-4`}>
+//         {im_lib.map((lib, i) => (
+//           <div  key={i} className={`${big_gal ? 'resize_sm m-auto' : 'resize_lg m-auto'}  grid`}>
+//             <div className='w-[90%] m-auto h-[85%] flex '>
+//             <div className='w-[45%] h-full border'>
+//               <img src={lib.left} alt="img" className='rounded-xl w-full h-full object-cover object-center'/>
+//             </div>
+//             <div className='w-[10%] h-full relative grid place-content-center'>
+//               <div className=' h-full w-full m-auto grid gap-4'>
+//                 <Header />
+//                 <div className='m-auto text-4xl cursor-pointer '>
+//                   {big_gal ? (
+//                     <span onClick={() => setBig_gal(false)}><RiZoomInLine className='hover:scale-125 sm_ooth'/></span>
+//                   ):(
+//                     <span onClick={() => setBig_gal(true)}><RiZoomOutLine className='hover:scale-90 sm_ooth' /></span>
+//                   )}
+//                 </div>
+//               </div>
+//             </div>
+//             <div className='w-[45%] h-full'>
+//               <img src={lib.right} alt="img" className='rounded-xl w-full h-full object-cover object-center'/>
+//             </div>
+//             </div>
+//           </div>
+//         ))}
+//        </motion.div>
+//               {/* </div> */}
+//          </div>
+//        </section>
+
+//     )
+//   }
