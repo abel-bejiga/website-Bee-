@@ -2,7 +2,7 @@
 .fadeIn{animation: fadeIn 0.5s ease-out forwards;}
 .resize_sm{animation: resize_sm 0.5s ease-in-out forwards;}
 .resize_lg{animation: resize_lg 0.5s ease-in-out forwards;}
-
+/* .rotate_left{animation: rotate_left 0.5s ease forwards;} */
 
 @keyframes fadeOut {
     from{opacity: 1;}
@@ -20,3 +20,8 @@
     from{height: 80vh; width: 80vw;}
     to{height: 100vh; width: 100vw;}
 }
+/* @keyframes rotate_left {
+    from{transform: rotateY(0);}
+    to{transform: rotateY(100deg)}
+    
+} */

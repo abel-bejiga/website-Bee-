@@ -27,7 +27,7 @@ const Gallary = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "6000 top",
+          end: "4000 top",
           scrub: 0.6,
           pin: true,
         },
@@ -38,22 +38,25 @@ const Gallary = () => {
 
 
   return (
-    <section className="scroll-section-outer">
+    <section className="scroll-section-outer  gradient">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section"> 
-          <div className=" bg-transparent overflow-hidden relative">
-            <div className="h-screen w-screen opacity-[0.48] relative rotate-[5deg] left-[16%]" style={{background:`url(${item.b_gal_intro}) center/cover no-repeat`}}>
+          <div className="overflow-visible relative">
+            <div className="h-screen w-screen opacity-[0.78] relative rotate-[90deg] left-[16%]" style={{background:`url(${item.b_gal_intro}) center/contain no-repeat`}}>
             </div>
             <div className='w-fit h-fit absolute left-1/3 -translate-x-1/2 whitespace-nowrap bottom-10'>
-                  <h1 className='fo_t text-[10vw] text-black '>Image Gallary</h1>
+                  <h1 className='fo_t text-[10vw] text-white '>Image Gallary</h1>
               <div className='relative bottom-8 left-2'>
                   <HeaderHor />
               </div> 
         </div>
           </div>
           </div>
+          {/* <div className=' scroll-section flex items-center justify-center select-none'> */}
             <Gal_card />
+
+          {/* </div> */}
             </div>
       </div>
     </section>

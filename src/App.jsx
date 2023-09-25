@@ -7,7 +7,6 @@ import Gallary from './pages/Gallary'
 import Contact from './pages/Contact'
 
 
-
 function App() {
 
   return (

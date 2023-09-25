@@ -7,20 +7,20 @@ import { loop_line_render } from '../pages/Hero'
 
 const Gal_card = () => {
   const [big_gal, setBig_gal] = React.useState(true)
-
   
   const bg_bor_gal = (val) => {
       return(
-          <div className={`absolute top-0 -z-10 border-b w-1 h-screen bg-neutral-100/10`} style={{left: (val/3) + '%'}}></div>     
+          <div className={`absolute top-0 -z-10 border-b w-1 h-screen bg-neutral-100/10`} style={{left: (val/4) + '%'}}></div>     
           )
         }
+
 
   return (
         <>
         {im_lib.map((lib, i) => (
-          <div key={i} className='scroll-section select-none'>
-            <div key={i} className=''>
-                {loop_line_render(bg_bor_gal, 80, (im_lib.length - 2) * 100)}
+          <div key={i} className=' scroll-section flex items-center justify-center select-none '>
+            <div key={i}>
+                {loop_line_render(bg_bor_gal, 10, (im_lib.length) * 100)}
             </div>
             <div className={`${big_gal ? 'resize_sm m-auto' : 'resize_lg m-auto'} w-screen flex place-content-center`}>
           {/* scroll section */}

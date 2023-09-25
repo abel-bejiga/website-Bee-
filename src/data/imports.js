@@ -1,39 +1,44 @@
-import bl from '../assets/beelogo.png'
-import b_top from '../assets/bee0.png'
-import tlt from '../assets/telet_h.jpg'
-import tlt_h from '../assets/customTelet.jpg'
-import se_at from '../assets/seat.png'
-import b_sec from '../assets/bee_abt.png'
-import b_gal_intro from '../assets/bee20.png'
-import b_1 from '../assets/bee1.jpg'
-import b_2 from '../assets/bee2.jpg'
-import b_18 from '../assets/bee18.jpg'
-import b_4 from '../assets/bee4.jpg'
-import b_21 from '../assets/bee21.jpg'
-import b_6 from '../assets/bee6.jpg'
-import b_7 from '../assets/bee7.jpg'
-import b_8 from '../assets/bee8.jpg'
-import b_9 from '../assets/bee9.jpg'
-import b_10 from '../assets/bee10.jpg'
-import b_11 from '../assets/bee11.jpg'
-import b_12 from '../assets/bee12.jpg'
-import b_13 from '../assets/bee13.jpg'
-import b_14 from '../assets/bee14.jpg'
-import b_16 from '../assets/bee16.jpg'
-import b_17 from '../assets/bee17.jpg'
-import hero_vis from '../assets/hero_vis.png'
-import bee_cont from '../assets/bee_cont.jpg'
+import bl from '../assets/beelogo.webp'
+import tlt from '../assets/telet.webp'
+import tlt_h from '../assets/customTelet.webp'
+import se_at from '../assets/seat.webp'
+import b_sec from '../assets/bee_abt.webp'
+import b_gal_intro from '../assets/bee20.webp'
+import b_1 from '../assets/bee1.webp'
+import b_2 from '../assets/bee2.webp'
+import b_18 from '../assets/bee18.webp'
+import b_4 from '../assets/bee4.webp'
+import b_21 from '../assets/bee21.webp'
+import b_6 from '../assets/bee6.webp'
+import b_7 from '../assets/bee7.webp'
+import b_8 from '../assets/bee8.webp'
+import b_9 from '../assets/bee9.webp'
+import b_10 from '../assets/bee10.webp'
+import b_11 from '../assets/bee11.webp'
+import b_12 from '../assets/bee12.webp'
+import b_13 from '../assets/bee13.webp'
+import b_14 from '../assets/bee14.webp'
+import b_16 from '../assets/bee16.webp'
+import b_17 from '../assets/bee17.webp'
+import hero_vis from '../assets/hero_vis.webp'
+import bee_cont from '../assets/bee_cont.webp'
+import flip_hero from '../assets/flip_hero.webp'
+import ko_da from '../assets/koda.webp'
+import se_fed from '../assets/sefed.webp'
+
 
 export const item = {
+    flip_hero: flip_hero,
     be_lgo: bl,
-    b_0: b_top,
     te_let: tlt, 
     te_let_h: tlt_h, 
     se_at: se_at,
     b_sec: b_sec,
     b_gal_intro: b_gal_intro,
     hero_vis: hero_vis,
-    b_cont: bee_cont
+    b_cont: bee_cont,
+    ko_da: ko_da,
+    se_fed: se_fed,
     }
 
 export const im_lib = [

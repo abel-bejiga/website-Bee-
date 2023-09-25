@@ -8,33 +8,9 @@
     --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
     --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
   }
-
-  
-  .hero__header {
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .hero__header h1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: var(--headlineBig);
-    color: var(--primaryTextColor);
-  }
-  
-  .hero__header h2 {
-    letter-spacing: var(--headlineSmall);
-    font-size: var(--headlineSmall);
-    text-transform: uppercase;
-    color: var(--primaryColor);
-  }
   
   .scroll-section-outer {
-    overflow: hidden;
+    /* overflow-x: hidden; */
   }
   
   .scroll-section-inner {
@@ -48,27 +24,8 @@
   .scroll-section {
     height: 100vh;
     width: 100vw;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
   
-  .scroll-section h3 {
-    color: var(--primaryTextColor);
-    letter-spacing: var(--headlineMedium);
-    font-size: var(--headlineMedium);
-    text-transform: uppercase;
-  }
-  
-  .footer {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer span {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: var(--headlineBig);
-    color: var(--primaryTextColor);
-  }
