@@ -5,12 +5,11 @@ import {RiZoomOutLine, RiZoomInLine} from 'react-icons/ri'
 import { loop_line_render } from '../pages/Hero'
 
 
-const Gal_card = () => {
-  const [big_gal, setBig_gal] = React.useState(true)
+const Gal_card = ({big_gal, setBig_gal}) => {
   
   const bg_bor_gal = (val) => {
       return(
-          <div className={`absolute top-0 -z-10 border-b w-1 h-screen bg-neutral-100/10`} style={{left: (val/7.4) + '%'}}></div>     
+          <div className={`absolute top-0 -z-10 border-b w-[1px] h-screen bg-gray-400/10`} style={{left: (val/7.4) + '%'}}></div>     
           )
         }
 
@@ -28,7 +27,7 @@ const Gal_card = () => {
 
   const lg_card = (doc, index) => {
     return (
-      <div key={index} className='h-screen w-full flex items-center justify-center select-none '>
+      <div key={index} className='h-screen sm:min-h-[640px] w-full flex items-center justify-center select-none '>
       <div key={index}>
           {loop_line_render(bg_bor_gal, 10, (im_lib.length + 1) * 100)}
       </div>

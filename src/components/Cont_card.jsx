@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import { item } from '../data/imports'
 import '../styles/anim.css'
+import Footer from './Footer'
 
 
 const Cont_card = () => {
@@ -17,9 +18,6 @@ const inpt_assist = () => {
   return (
     <>
       <div className='h-full w-full flex gradient_cont'>
-      <div className='absolute top-8 left-10 '>
-          <Header />
-        </div>
         <div className='w-3/4 sm:h-3/4 h-5/6 min-h-[400px] overflow-auto rounded-xl shadow shadow-neutral-500 justify-center items-center m-auto sm:flex max-sm:grid'>
             <div className='sm:w-[45%] w-full h-full flex place-content-center'>
                 <img src={item.ko_da} alt="img" className='object-contain object-center w-3/4 h-auto m-auto' />

@@ -4,7 +4,7 @@ import { item } from '../data/imports'
 const About = () => {
   return (
         <>
-            <div className='sm:h-screen h-[60vh] max-sm:grid max-sm:place-content-center max-sm:gap-4 relative '>
+            <div className='sm:h-screen sm:min-h-[700px] h-[60vh] max-sm:grid max-sm:place-content-center max-sm:gap-4 relative '>
                 <div className='xl:w-[400px] w-60 m-auto'>
                     <img src={item.se_at} className='w-full opacity-[40%] m-auto object-cover object-center' alt="ico" />
                 </div>
