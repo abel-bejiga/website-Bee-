@@ -10,7 +10,9 @@ dotenv.config({path:'../../num.env'});
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://www.bemneterbeto.com'
+}));
 
 
 app.get('/api', async (req, res) => {

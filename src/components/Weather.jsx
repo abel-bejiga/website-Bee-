@@ -43,7 +43,7 @@ const Weather = ({ setData }) => {
     }
 
     React.useEffect (() => {
-      // fetch_weather()
+      fetch_weather()
       const update_interval = 60 * 60 * 1000
       const interval_id = setInterval(() => {
         fetch_weather()

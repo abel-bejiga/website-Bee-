@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
-    <div className='sm:h-[200px] h-fit w-full'>
-      <div className='gradient_foot '>
+    <div className='sm:h-[200px] h-fit w-full '>
+      <div className='gradient_foot w-full h-full'>
         <div className='w-1/2 h-3/4 max-sm:py-3 m-auto grid place-content-center text-center'>
            <div className='grid grad_powered-by h-20 w-fit px-4 shadow-sm shadow-black rounded-lg justify-center items-center'>
             <p>Powered By</p> 

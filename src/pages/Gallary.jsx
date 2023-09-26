@@ -20,7 +20,7 @@ const Gallary = () => {
         translateX: 0,
       },
       {
-        translateX: `-${(im_lib.length) * 100}vw`,
+        translateX: `-${(im_lib.length - 1.5) * 100}vw`,
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -39,7 +39,7 @@ const Gallary = () => {
   return (
     <section className="h-screen w-screen gradient">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className={`sm:w-[900vw] w-[650vw] flex flex-row relative justify-center items-center`}>
+        <div ref={sectionRef} className={`w-fit flex flex-row relative justify-center items-center`}>
           <div className="h-screen w-screen "> 
           <div className="overflow-visible relative">
             <div className="h-screen w-screen opacity-[0.9] relative rotate-[90deg] left-[16%] max-sm:hidden" style={{background:`url(${item.b_gal_intro}) center/contain no-repeat`}}>

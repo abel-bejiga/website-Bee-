@@ -10,7 +10,7 @@ const Gal_card = () => {
   
   const bg_bor_gal = (val) => {
       return(
-          <div className={`absolute top-0 -z-10 border-b w-1 h-screen bg-neutral-100/10`} style={{left: (val/4) + '%'}}></div>     
+          <div className={`absolute top-0 -z-10 border-b w-1 h-screen bg-neutral-100/10`} style={{left: (val/7.4) + '%'}}></div>     
           )
         }
 
@@ -28,14 +28,11 @@ const Gal_card = () => {
 
   const lg_card = (doc, index) => {
     return (
-      <div key={index} className='h-screen w-screen flex items-center justify-center select-none '>
-      <div key={index} className='max-sm:hidden'>
-          {loop_line_render(bg_bor_gal, 10, (im_lib.length) * 100)}
+      <div key={index} className='h-screen w-full flex items-center justify-center select-none '>
+      <div key={index}>
+          {loop_line_render(bg_bor_gal, 10, (im_lib.length + 1) * 100)}
       </div>
-      <div key={index} className='sm:hidden'>
-          {loop_line_render(bg_bor_gal, 10, 100)}
-      </div>
-      <div className={`${big_gal ? 'resize_sm m-auto' : 'resize_lg m-auto'} w-full flex place-content-center`}>
+      <div className={`${big_gal ? 'resize_sm m-auto' : 'resize_lg m-auto'} flex justify-center`}>
     {/* scroll section */}
     <div className='w-[90%] m-auto h-[85%] flex '>
       <div className='w-[45%] h-full '>
@@ -60,10 +57,7 @@ const Gal_card = () => {
   const sm_card = (doc, index) => {
     return (
       <div key={index} className='flex items-center justify-center select-none '>
-      <div key={index} className='max-sm:hidden'>
-          {loop_line_render(bg_bor_gal, 10, (im_lib.length) * 100)}
-      </div>
-      <div key={index} className='sm:hidden'>
+      <div key={index}>
           {loop_line_render(bg_bor_gal, 10, 100)}
       </div>
       <div className={`${big_gal ? 'resize_sm' : 'resize_lg'} w-screen flex justify-center items-center`}>
