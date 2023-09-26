@@ -46,7 +46,7 @@ const Gallary = () => {
             <div className="album_cover h-screen w-screen  sm:min-h-[640px] opacity-[0.9] relative rotate-[90deg] left-[16%] max-sm:hidden" style={{background:`url(${item.b_gal_intro}) center/contain no-repeat`}}>
             </div>
             <div className='w-fit h-fit sm:absolute sm:left-1/3 sm:-translate-x-1/2 whitespace-nowrap bottom-10'>
-                  <h1 className='fo_t text-[10vw] max-sm:hidden'>Image Gallary</h1>
+                  <h1 className='fo_t text-[10vw] text-white max-sm:hidden'>Image Gallary</h1>
                   
               <div className='relative bottom-8 left-2 max-sm:hidden'>
                   <HeaderHor />

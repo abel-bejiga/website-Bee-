@@ -1,19 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 
-import dotenv from 'dotenv';
-
-
-dotenv.config({path:'../../num.env'});
-
-
 const app = express();
 const port = 3000;
 
 app.use(cors({
-  origin: 'https://www.bemneterbeto.com'
+  origin: ['https://www.bemneterbeto.com', 'http://localhost:3000', 'http://localhost:5173'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  optionsSuccessStatus: 204,
 }));
-
 
 app.get('/api', async (req, res) => {
   try {
