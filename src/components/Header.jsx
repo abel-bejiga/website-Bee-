@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
     {/* fixed top-8 left-10 */}
-      <div>
+      <div className='max-sm:hidden'>
       <div className='grid place-items-center gap-4'>
             <img src={item.be_lgo} alt="ico" className='w-16 rounded-2xl cursor-pointer'/>
             <ul className='grid gap-2 place-items-center sm_ooth'>

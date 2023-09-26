@@ -21,6 +21,7 @@ import b_14 from '../assets/bee14.webp'
 import b_16 from '../assets/bee16.webp'
 import b_17 from '../assets/bee17.webp'
 import hero_vis from '../assets/hero_vis.webp'
+import hero_vis_sm from '../assets/hero_vis_sm.png'
 import bee_cont from '../assets/bee_cont.webp'
 import flip_hero from '../assets/flip_hero.webp'
 import ko_da from '../assets/koda.webp'
@@ -39,6 +40,7 @@ export const item = {
     b_cont: bee_cont,
     ko_da: ko_da,
     se_fed: se_fed,
+    hero_vis_sm:hero_vis_sm,
     }
 
 export const im_lib = [

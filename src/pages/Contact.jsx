@@ -45,10 +45,10 @@ const Contact = () => {
       }
   return (
     <>
-       <div className="scroll-section-outer">
+       <div className="">
         <div ref={contTriggerRef}>
-          <div ref={contSectionRef} className="scroll-section-inner">
-          <div className="scroll-section">
+          <div ref={contSectionRef} className="w-[400vw] flex flex-row relative">
+          <div className="h-screen w-screen">
           <div className='overflow-visible relative gradient_cont '>
         <div className='relative'>
                 {loop_line_render(bg_bor_cont, 10, 100)}
@@ -64,15 +64,19 @@ const Contact = () => {
             </div>
         </div>
         </div>
-        <div className="scroll-section">
-        <div className='overflow-visible relative h-full w-full'>
+        <div className="h-screen w-screen">
+        <div className='overflow-visible relative h-full w-full max-sm:hidden'>
               <Cont_card />
           </div>
+          <div className='h-screen w-full sm:hidden'>
+          <Cont_card />
+       </div>
         </div>
 
         </div>
         </div>
        </div>
+      
     </>
   )
 }

@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <>
         <div>
-            <Hamburger rounded toggled={muA} toggle={setMuA} size={40} easing='ease-in-out'/>
+            <Hamburger rounded toggled={muA} toggle={setMuA} size={25} easing='ease-in-out'/>
         </div>
     </>
   )
