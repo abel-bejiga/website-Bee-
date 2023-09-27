@@ -1,4 +1,7 @@
 import React from 'react'
+import dotenv from 'dotenv'
+
+
 
 const Weather = ({ setData }) => {
   const weatherIcons = {
@@ -22,15 +25,18 @@ const Weather = ({ setData }) => {
     '50n': '🌫️'
   };
 
+
     const fetch_weather = () => {
-      fetch('http://localhost:3000/api')
+      fetch('https://www.bemneterbeto.com/api')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         return response.json();
+        
       })
       .then((data) => {
+
         const to_f = Math.floor((data.main.temp - 273.15) * 1.8 + 32)
           const ico = data.weather[0].icon
           const ico_ = weatherIcons[ico]

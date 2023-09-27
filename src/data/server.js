@@ -1,14 +1,17 @@
 import express from 'express';
 import cors from 'cors';
+import axios from 'axios'
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
-app.use(cors({
-  origin: ['https://www.bemneterbeto.com', 'http://localhost:3000', 'http://localhost:5173'],
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  optionsSuccessStatus: 204,
-}));
+
+// {
+//   origin: ['https://www.bemneterbeto.com', 'http://localhost:5000', 'http://localhost:5173'],
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   optionsSuccessStatus: 204,
+// }
+app.use(cors());
 
 app.get('/api', async (req, res) => {
   try {

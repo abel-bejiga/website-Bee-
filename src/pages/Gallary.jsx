@@ -4,9 +4,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HeaderHor from '../components/HeaderHor';
 import { im_lib, item } from "../data/imports";
 import Gal_card from '../components/Gal_card';
+import { loop_line_render } from './Hero';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 
-const Gallary = () => {
+const Gallary = ({win_width}) => {
   const [big_gal, setBig_gal] = React.useState(true)
 
   const sectionRef = React.useRef(null);
@@ -35,10 +37,19 @@ const Gallary = () => {
     );
     return () => pin.kill();
   }, []);
+  
+  const bg_bor_gal = (val) => {
 
+    return(
+      <div className={`absolute border-b w-[1px] h-[200vh] bg-gray-400/30 `} style={{left: (val) + 'px'}}></div>     
+        )
+      }
 
   return (
-    <section className="h-screen relative w-screen gradient">
+    <section className="h-screen relative w-screen gradient" id='gallary'>
+        <div className='lines'>
+          {loop_line_render(bg_bor_gal, 0, win_width, 80)}
+      </div>
       <div ref={triggerRef}>
         <div ref={sectionRef} className={`w-fit flex flex-row relative justify-center items-center`}>
           <div className="h-screen w-screen"> 
@@ -55,6 +66,8 @@ const Gallary = () => {
           </div>
           </div>
             <Gal_card big_gal={big_gal} setBig_gal={setBig_gal}/>
+            <div className={ 'border-b border-r w-screen h-[2px] border-green-500 rounded-r-xl text-2xl'}>Keep ROlling</div>
+            <div className={'pl-4 text-center text-2xl flex items-center'}>Steep Road ahead! <AiOutlineArrowDown /></div>
             {/*  */}
             </div>
       </div>

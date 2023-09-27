@@ -8,16 +8,17 @@ import { useInView } from 'react-intersection-observer'
 import { Reveal } from 'react-reveal'
 
 
-export const loop_line_render = (el, init, line_num) => {
+export const loop_line_render = (el, init, line_num, inc) => {
   const arr = []
-  for (let i = init; i < line_num; i+=10){
+  for (let i = init; i < line_num; i+= inc){
     arr.push(el(i))
   }
   return arr
 }
 
-const Hero = () => {
+const Hero = ({win_width}) => {
   const [data, setData] = React.useState([null, '']);
+
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce:true,
@@ -32,7 +33,7 @@ const Hero = () => {
   })
   const bg_bor = (val) => {
     return(
-      <div className={`absolute border-b w-[1px] h-[200vh] bg-gray-400/50`} style={{left: val + '%'}}></div>
+      <div className={`absolute border-b w-[1px] h-[200vh] bg-gray-400/30 `} style={{left: (val) + 'px'}}></div>
 
     )
   }
@@ -55,7 +56,7 @@ const Hero = () => {
  
   return (
     <>
-        <div className='max-sm:hidden absolute sm:top-8 top-1/2 max-sm:-translate-y-1/4 left-10 '>
+        <div className='max-sm:hidden absolute sm:top-8 top-1/2 max-sm:-translate-y-1/4 left-10 z-20'>
           <Header />
         </div>
         <div className="max-sm:hidden absolute top-8 right-10 z-20">
@@ -65,8 +66,8 @@ const Hero = () => {
         <div className='max-sm:hidden'>
           <Weather setData={setData}/>
         </div>
-          <div>
-            {loop_line_render(bg_bor, 10, 100)}
+          <div className='lines'>
+            {loop_line_render(bg_bor, 0, win_width, 80)}
           </div>
         <div className='h-screen sm:min-h-[640px] relative overflow-hidden' id='Home'>
   

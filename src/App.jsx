@@ -8,13 +8,23 @@ import Contact from './pages/Contact'
 
 
 function App() {
+  const [win_width, setWin_width] = React.useState(window.innerWidth)
+    const  win_size = () => {
+      setWin_width(window.innerWidth)
+    }
+
+  React.useEffect(() => {
+        window.addEventListener('resize', win_size)
+
+        return () => window.removeEventListener('resize', win_size)
+  }, [])
 
   return (
     <BrowserRouter>
-      <Hero />
+      <Hero win_width={win_width}/>
       <About />
-      <Gallary />
-      <Contact />
+      <Gallary win_width={win_width}/>
+      <Contact win_width={win_width}/>
       <Footer />
     </BrowserRouter>
   )

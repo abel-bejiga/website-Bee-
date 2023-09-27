@@ -33,15 +33,6 @@ body {
 .sm_ooth {
     transition: all 0.5s ease;
 }
-.about:hover {
-  width: 30px;
-  height: 230px;
-}
-
-.about:hover::after {
-  content: 'About';
-  transform: rotate(90deg);
-}
 
 .gradient {
   background: linear-gradient(to bottom, #e8e6e28a 0%, rgba(108, 132, 238, 0.247) 25%, rgba(108, 132, 238, 0.459) 50%, #e8e6e28a) 100% ;

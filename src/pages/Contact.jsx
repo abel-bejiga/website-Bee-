@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import '../styles/App.css'
 import Cont_card from '../components/Cont_card';
 
-const Contact = () => {
+const Contact = ({win_width}) => {
   const contSectionRef = React.useRef(null);
   const contTriggerRef = React.useRef(null);
 
@@ -40,19 +40,19 @@ const Contact = () => {
 
   const bg_bor_cont = (val) => {
     return(
-        <div className={`absolute top-0  border-b w-[1px] h-screen bg-neutral-400/50`} style={{left: val + '%'}}></div>     
+      <div className={`absolute border-b w-[1px] h-[100vh] bg-gray-400/30 `} style={{left: (val) + 'px'}}></div>    
         )
       }
   return (
     <>
-       <div className="">
+       <div id='contact'>
+        <div className=''>
+                {loop_line_render(bg_bor_cont, 0, win_width, 80)}
+            </div>
         <div ref={contTriggerRef}>
-          <div ref={contSectionRef} className="w-[400vw] flex flex-row relative">
+          <div ref={contSectionRef} className="w-[200vw] flex flex-row relative">
           <div className="h-screen sm:min-h-[640px] w-screen">
           <div className='overflow-visible relative gradient_cont '>
-        <div className='relative'>
-                {loop_line_render(bg_bor_cont, 10, 200)}
-            </div>
             <div className='w-full h-[55%]'>
                 <img src={item.b_cont} alt='img' className='relative w-full h-full object-cover object-center' />
             </div>

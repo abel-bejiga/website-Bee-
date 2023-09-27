@@ -44,12 +44,12 @@ export const item = {
     }
 
 export const im_lib = [
-    {left: b_1, right: b_2},
-    {left: b_18, right: b_4},
-    {left: b_17, right: b_6},
-    {left: b_7, right: b_8},
-    {left: b_9, right: b_10},
-    {left: b_11, right: b_12},
-    {left: b_13, right: b_14},
-    {left: b_16, right: b_21},
+    {id: 1, left: b_1, right: b_2},
+    {id: 2, left: b_18, right: b_4},
+    {id: 3, left: b_17, right: b_6},
+    {id: 4, left: b_7, right: b_8},
+    {id: 5, left: b_9, right: b_10},
+    {id: 6, left: b_11, right: b_12},
+    {id: 7, left: b_13, right: b_14},
+    {id: 8, left: b_16, right: b_21},
 ]

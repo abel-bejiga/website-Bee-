@@ -40,10 +40,18 @@ const Header = () => {
             <img src={item.be_lgo} alt="ico" className='w-12 rounded-lg cursor-pointer'/>
             <ul className='grid gap-2 place-items-center sm_ooth'>
               {y > 200 ? <AiOutlineHome onClick={() => sc_section('Home')} size={30} className='cursor-pointer' style={{color: col.t_col}}/> : ''}
-              <li className='rounded-full w-5 h-3 cursor-pointer hover:h-30 hover:w-10' style={{backgroundColor: col.be_col, borderColor: col.t_col}}></li>
-              <li className='about rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}></li>
-              <li className='rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}></li>
-              <li className='rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}></li>
+              <li onClick={() => sc_section('about')} className='circle rounded-full w-5 h-3 cursor-pointer hover:h-30 hover:w-10' style={{backgroundColor: col.be_col, borderColor: col.t_col}}>
+                <span className='text uppercase -rotate-90 text-sm font-semibold'>about</span>
+              </li>
+              <li onClick={() => sc_section('gallary')} className='circle rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}>
+                <span className='text uppercase -rotate-90 text-sm font-semibold'>gallary</span>
+              </li>
+              <li onClick={() => sc_section('contact')} className='circle rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}>
+                <span className='text uppercase -rotate-90 text-sm font-semibold'>contact</span>
+              </li>
+              <li onClick={() => sc_section('footer')} className='circle rounded-full w-5 h-3 cursor-pointer' style={{backgroundColor: col.be_col, borderColor: col.t_col}}>
+                <span className='text uppercase -rotate-90 text-sm font-semibold'>developer</span>
+              </li>
             </ul>
               <FaAngleDoubleDown size={30} className='cursor-pointer' style={{color: col.t_col}}/>
           </div>
