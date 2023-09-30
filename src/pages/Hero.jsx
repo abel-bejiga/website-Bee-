@@ -81,7 +81,7 @@ const Hero = ({win_width}) => {
           </div>
         <div className='h-screen sm:min-h-[640px] relative overflow-hidden' id='Home'>
   
-           <div ref={refImg} className='h-[70vh] min-h-[500px] max-h-[700px] w-auto absolute z-[99] -top-10 left-1/2 -translate-x-1/2 min-w-[500px] max-w-[650px]  max-sm:opacity-[0.8] sm:min-w-[800px]'>
+           <div ref={refImg} className='h-[70vh] min-h-[500px] max-h-[700px] w-full absolute z-[99] -top-10 left-1/2 -translate-x-1/2 min-w-[500px] max-w-[650px]  max-sm:opacity-[0.8] sm:min-w-[800px]'>
            <Reveal top cascade when={inViewImg}>
            <img src={item.flip_hero} alt="img" className=' object-cover object-center w-full h-full m-auto'/>
            </Reveal>
@@ -89,7 +89,7 @@ const Hero = ({win_width}) => {
           <Menu />
         </div>
            </div>
-            <div ref={ref} className='absolute left-1/2 -translate-x-1/2 sm:bottom-10 bottom-0 m-auto w-full h-fit max-w-[2500px]'>
+            <div ref={ref} className='absolute left-1/2 -translate-x-1/2 sm:bottom-10 bottom-0 m-auto w-full h-42 max-w-[2500px]'>
              <Reveal bottom opposite cascade when={inView}>
              <img src={item.hero_vis} alt="img" className='max-sm:hidden w-full h-full object-cover object-center'/>
               <img src={item.hero_vis_sm} alt="img" className='sm:hidden w-full opacity-[0.5] m-auto h-full object-cover object-center'/>
