@@ -45,7 +45,7 @@ const Contact = ({win_width}) => {
       }
   return (
     <>
-       <div id='contact'>
+       <div className='max-sm:w-full h-screen' id='contact'>
         <div className='max-sm:hidden'>
                 {loop_line_render(bg_bor_cont, 0, win_width, 80)}
             </div>
@@ -73,6 +73,9 @@ const Contact = ({win_width}) => {
 
         </div>
         </div>
+        <div className='overflow-visible relative h-full w-full'>
+              <Cont_card win_width={win_width}/>
+          </div>
        </div>
       
     </>

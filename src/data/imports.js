@@ -2,7 +2,8 @@ import bl from '../assets/beelogo.webp'
 import tlt from '../assets/telet.webp'
 import tlt_h from '../assets/customTelet.webp'
 import se_at from '../assets/seat.webp'
-import b_sec from '../assets/sec_sm.png'
+import b_sec from '../assets/sec_sm.webp'
+import b_sec_fed from '../assets/bee2-fade.webp'
 import b_gal_intro from '../assets/bee20.webp'
 import b_1 from '../assets/bee1.webp'
 import b_2 from '../assets/bee2.webp'
@@ -21,7 +22,7 @@ import b_14 from '../assets/bee14.webp'
 import b_16 from '../assets/bee16.webp'
 import b_17 from '../assets/bee17.webp'
 import hero_vis from '../assets/hero_vis.webp'
-import hero_vis_sm from '../assets/hero_vis_sm.png'
+import hero_vis_sm from '../assets/hero_vis_sm.webp'
 import bee_cont from '../assets/bee_cont.webp'
 import flip_hero from '../assets/flip_hero.webp'
 import ko_da from '../assets/koda.webp'
@@ -41,6 +42,7 @@ export const item = {
     ko_da: ko_da,
     se_fed: se_fed,
     hero_vis_sm:hero_vis_sm,
+    b_sec_fed:b_sec_fed,
     }
 
 export const im_lib = [
