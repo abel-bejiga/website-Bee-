@@ -10,6 +10,7 @@
   @font-face {
     font-family: 'SFPro-thin';
     src: url('./fonts/SF_Pro_Rounded/SF-Pro-Rounded-Thin.otf');
+    font-display: auto;
   }
 
   ::-webkit-scrollbar {
@@ -60,6 +61,4 @@ body {
 .gradient_foot {
   background: linear-gradient(to bottom, rgba(121, 124, 79, 0.164), #e8e6e28a);
 }
-
-
 

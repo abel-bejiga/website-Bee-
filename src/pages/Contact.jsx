@@ -46,10 +46,10 @@ const Contact = ({win_width}) => {
   return (
     <>
        <div id='contact'>
-        <div className=''>
+        <div className='max-sm:hidden'>
                 {loop_line_render(bg_bor_cont, 0, win_width, 80)}
             </div>
-        <div ref={contTriggerRef}>
+        <div ref={contTriggerRef} className='max-sm:hidden'>
           <div ref={contSectionRef} className="w-[200vw] flex flex-row relative">
           <div className="h-screen sm:min-h-[640px] w-screen">
           <div className='overflow-visible relative gradient_cont '>
@@ -68,9 +68,7 @@ const Contact = ({win_width}) => {
         <div className='overflow-visible relative h-full w-full max-sm:hidden'>
               <Cont_card />
           </div>
-          <div className='h-screen w-full sm:hidden'>
-          <Cont_card />
-       </div>
+ x
         </div>
 
         </div>

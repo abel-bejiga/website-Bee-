@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+        fo_t:['SFPro-thin', 'sans-serif'],
+        fo_r: ['SFPro-rounded', 'sans-serif'],
+    
+    },
   },
   plugins: [],
 }
