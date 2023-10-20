@@ -76,9 +76,7 @@ const Hero = ({win_width}) => {
           <div className='lines max-sm:hidden'>
             {loop_line_render(bg_bor, 0, win_width, 80)}
           </div>
-          <div>
-            {loop_line_render(bg_bor_sm, 0, 100, 20)}
-          </div>
+
         <div className='h-screen sm:min-h-[640px] relative overflow-hidden' id='Home'>
   
            <div ref={refImg} className='h-[70vh] min-h-[500px] max-h-[700px] w-full absolute z-[99] -top-10 left-1/2 -translate-x-1/2 min-w-[500px] max-w-[650px]  max-sm:opacity-[0.8] sm:min-w-[800px]'>

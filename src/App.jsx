@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Footer from './components/Footer'
 import Hero from './pages/Hero'
 import About from './pages/About'
 import Gallary from './pages/Gallary'
@@ -25,7 +24,6 @@ function App() {
       <About />
       <Gallary win_width={win_width}/>
       <Contact win_width={win_width}/>
-      <Footer />
     </BrowserRouter>
   )
 }

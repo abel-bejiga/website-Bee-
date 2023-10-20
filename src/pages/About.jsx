@@ -24,10 +24,10 @@ const About = () => {
                     <h1 className='sm:font-[SFPro-thin] font-[SFPro-rounded] about-slogan 2xl:text-7xl xl:text-5xl sm:text-5xl text-2xl w-full text-center uppercase'>A beauty that is truly captivating, radiating grace and elegance with every glance.</h1>
                     </Reveal>
                 </div>
-                    <div className='max-sm:hidden absolute xl:top-20 top-7 xl:right-0 -right-40 z-[1] overflow-hidden' style={{height: 'calc(100% - 5rem)'}}>
+                    {/* <div className='max-sm:hidden absolute xl:top-20 top-7 xl:right-0 -right-40 z-[1] overflow-hidden' style={{height: 'calc(100% - 5rem)'}}>
                         <img src={item.b_sec} alt="img" className='object-cover object-center'/>
                     </div>
-      
+       */}
             </div>
 
         </>

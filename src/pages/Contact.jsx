@@ -68,12 +68,12 @@ const Contact = ({win_width}) => {
         <div className='overflow-visible relative h-full w-full max-sm:hidden'>
               <Cont_card />
           </div>
- x
+ 
         </div>
 
         </div>
         </div>
-        <div className='overflow-visible relative h-full w-full'>
+        <div className='overflow-visible relative h-full w-full sm:hidden'>
               <Cont_card win_width={win_width}/>
           </div>
        </div>
